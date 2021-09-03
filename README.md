@@ -55,7 +55,7 @@ HINT: You must give your element an attribute of target and set it to _blank in 
 <nav id="tribute-link"><ul class="container">
           <li><a href="Main.html" target="blank">Main</a></li></ul> </nav>
 
-8.I need to secure the responsiveness of the image upon resizing.
+8. I need to secure the responsiveness of the image upon resizing.
 
 9. I need to center the image element within its parent element.
 

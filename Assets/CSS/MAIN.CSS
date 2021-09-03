@@ -8,9 +8,6 @@ html {
     color: white;
     text-align: center;
     font-size: medium;
-
-
-
   }
 
   
@@ -19,13 +16,7 @@ html {
     max-width: 70%;
   }
   
-  div.card-body h5 {
-    padding-left: 20px;
-  }
   
-  p#more {
-    padding-top: 15px;
-  }
   
   @media (max-width: 520px) {
     span.navbar-text {
@@ -36,13 +27,6 @@ html {
     }
   }
 
-  div#ac {
-    color: #fff;
-    
-  }
-
-  
-  
  /* Nav */
   #tribute-link {
 		background-color: #282828;
@@ -172,11 +156,13 @@ html {
     /* New Nav */
 
     #newNav {
-      background-color: #282828;
+      background-color: transparent;
       text-align: center;
-      position: fixed;
+      left: 50%;
+      margin-left: -5%;
+      position:fixed;
       background-attachment: fixed;
-      left: 45%;
+      
       bottom: 0;
       width: 10%;
       z-index: 10000;
@@ -294,15 +280,48 @@ html {
   
           .newContainer.medium {
                   width: 100%;
-              }
+              } }
+
+              
+
+    /* Bio */   
+    
+    #bio {
+      font-size: medium;
+
+    }
+
+    /* intro */   
+    
+    #intro {
+      font-size: medium;
+      left: 0;
+
+    }
+
+     /* Paragraph */   
+    
+     #Par {
+      font-size: 20px;
+      color: white;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-align: justify;
+      background-color:black;
+      opacity: 0.82;
+      word-spacing: 10px;
+     }
+
+    /* Button */          
   
-      }
+     
 
       .button { position: absolute;
         background-attachment: fixed;
 
       }
-    
+
+      
 
 
 
