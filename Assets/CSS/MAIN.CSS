@@ -5,7 +5,14 @@ html {
   div#main {
     padding: 25px;
     margin-top: 80px;
+    color: white;
+    text-align: center;
+    font-size: medium;
+
+
+
   }
+
   
   div#tribute-info {
     margin: 0 auto;
@@ -33,9 +40,11 @@ html {
     color: #fff;
     
   }
+
+  
   
  /* Nav */
-  #nav {
+  #tribute-link {
 		background-color: #282828;
 		text-align: center;
 		position: fixed;
@@ -47,20 +56,21 @@ html {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+    
 	}
 
-		#nav ul {
+		#tribute-link ul {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
 		}
 
-		#nav li {
+		#tribute-link li {
 			display: inline-block;
 			padding-left: 0;
 		}
 
-		#nav a {
+		#tribute-link a {
 			-moz-transition: background-color .2s ease-in-out;
 			-webkit-transition: background-color .2s ease-in-out;
 			-ms-transition: background-color .2s ease-in-out;
@@ -78,16 +88,16 @@ html {
 			padding: 0 1.25em;
 		}
 
-			#nav a:hover {
+			#tribute-link a:hover {
 				color: #fff !important;
 				background: #383838;
 			}
 
-			#nav a.active {
+			#tribute-link a.active {
 				background: #484848;
 			}
 
-				#nav a.active:before {
+				#tribute-link a.active:before {
 					content: '';
 					display: block;
 					position: absolute;
@@ -158,6 +168,141 @@ html {
             }
 
     }
+
+    /* New Nav */
+
+    #newNav {
+      background-color: #282828;
+      text-align: center;
+      position: fixed;
+      background-attachment: fixed;
+      left: 45%;
+      bottom: 0;
+      width: 10%;
+      z-index: 10000;
+      
+      
+      cursor: default;
+      height: 3.5em;
+      line-height: 3.5em;
+    }
+  
+      #newNav ul {
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 0;
+      }
+  
+      #newNav li {
+        display: inline-block;
+        padding-left: 0;
+      }
+  
+      #newNav a {
+        -moz-transition: background-color .2s ease-in-out;
+        -webkit-transition: background-color .2s ease-in-out;
+        -ms-transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease-in-out;
+        position: relative;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        outline: 0;
+        font-weight: 600;
+        border-radius: 8px;
+        color: #fff;
+        height: 2.5em;
+        line-height: 2.5em;
+        padding: 0 1.25em;
+      }
+  
+      #newNav a:hover {
+          color: #fff !important;
+          background: #383838;
+        }
+  
+        #newNav a.active {
+          background: #484848;
+        }
+  
+        #newNav a.active:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -0.6em;
+            left: 50%;
+            margin-left: -0.75em;
+            border-left: solid 0.75em transparent;
+            border-right: solid 0.75em transparent;
+            border-top: solid 0.6em #282828;
+          }
+  
+  /* New Container */
+
+    .newContainer {
+      margin: 0 auto;
+      max-width: calc(100% - 50px);
+      width: 1200px;
+  }
+  
+  .newContainer.medium {
+          width: 900px;
+      }
+  
+      @media screen and (max-width: 1680px) {
+  
+        .newContainer {
+              width: 1200px;
+          }
+  
+          .newContainer.medium {
+                  width: 900px;
+              }
+  
+      }
+  
+      @media screen and (max-width: 1280px) {
+  
+        .newContainer {
+              width: 960px;
+          }
+  
+              .container.medium {
+                  width: 720px;
+              }
+  
+      }
+  
+      @media screen and (max-width: 980px) {
+  
+        .newContainer {
+              width: 100%;
+          }
+  
+          .newContainer.medium {
+                  width: 75%;
+              }
+  
+      }
+  
+      @media screen and (max-width: 736px) {
+  
+        .newContainer {
+              width: 100%;
+              max-width: calc(100% - 30px);
+          }
+  
+          .newContainer.medium {
+                  width: 100%;
+              }
+  
+      }
+
+      .button { position: absolute;
+        background-attachment: fixed;
+
+      }
+    
 
 
 
