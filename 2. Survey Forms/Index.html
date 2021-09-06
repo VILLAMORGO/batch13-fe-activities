@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Title</title>
+    <title>Survey Form</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="Assets/CSS/MAIN.CSS" />
 </head>
 
-<header>
+<header id="header">
     <h1 id=”title”>Survey Form</h1>
+    <HR>
     <p id=”description”>Hello, I appreciate your kindness in participating to fill up this survey. </p>
     <p>Thank you in advance!</p>
 </header>
 <body>
 
     
-<!-- Name Input -->
+
         <form id="survey-form">
-                <fieldset id="name">
-                    <label for="firstName">First name:</label><br>
-                    <input type="text" id="firstName" name="firstName"><br>
-                    <label for="lastName">Last name:</label><br>
-                    <input type="text" id="lastName" name="lastName">
+            
+                <fieldset >
+                    <!-- Name Input -->
+                    <label id="name"for="firstName"><strong>First Name:</strong></label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name"><br><br>
+                    <label for="lastName"><strong>Last Name:</strong></label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name"><br><br>
+
+                    <!-- Email Input -->
+                    
+                    <label id="email" for="email"><strong>Email Address:</strong></label><br>
+                    <input type="email" id="email" name="firstName" placeholder="Enter your Email Address"><br><br>
+
+
+                    <!-- Email Input -->
+
+                    <label id="number" for="number"><strong>Enter your Age</strong> </label> <br>
+                    
+                    <input id="number" name="number" type="number" placeholder="Age" min="1" max="125" required><br><br>
+
+                   <!-- Submit button -->
+<div class="form-group">
+    <div class="col-md-4 col-md-offset-4 text-center"> 
+  <button id="submit- button" name="submit- button" class="btn btn-primary">SUBMIT</button> 
+  </div>
+    </div>
+  </div>
+
                 </fieldset>
+
+            
+
+                <fieldset >
+                   
+                    
+                </fieldset>
+
+
           </form>
 
 
