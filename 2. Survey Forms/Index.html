@@ -16,127 +16,349 @@
 <body>
 
     
-
-        <form id="survey-form">
+<div id="form">
+        <form id="survey-form" method="GET">
+          <br>
             
-                <fieldset >
-                    <!-- Name Input -->
-                    <label id="firstname-label"for="firstName"><strong>First Name:</strong></label><br>
-                    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name" required><br><br>
+                
 
-                    <label id="lastname-label" for="lastName"><strong>Last Name:</strong></label><br>
-                    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required><br><br>
-
-                    <!-- Email Input -->
-                    
-                    <label id="email-label" for="email"><strong>Email Address:</strong></label><br>
-                    <input type="email" id="email" name="firstName" placeholder="Enter your Email Address" required><br><br>
+ <fieldset id="info">
+<h3><strong> Personal Information:
+</strong> </h3><br>
 
 
-                    <!-- Age Input -->
+ <!-- Name Input -->
+ <div id="nameinput" > 
+   <div><div class="n" style="margin-left: 5.5%;"><label id="firstname-label" for="firstName" ><strong style="text-align: left;">First Name:</strong></label><br><br></div>
+     
 
-                    <label id="number-label" for="number"><strong>Enter your Age</strong> </label> <br>
-                    
-                    <input id="number" name="number" type="number" placeholder="Age" min="1" max="125" required><br><br>
-                    <!-- Dropdown -->
-                    <div> 
-                      <label for="cars">Choose Something:</label><br>
-<select name="cars" id="Dropdown" form="carform">
-  <option selected disabled value>Select an option</option>
-  <option value="volvo">Option 1</option>
-  <option value="saab">Option 2</option>
-  <option value="opel">Option 3</option>
-  <option value="audi">Option 4</option>
-</select>
+    <input size="50.99%" type="text" id="firstName" name="firstName" placeholder="Enter your First Name" required><br><br></div>
+  
+  <div><div class="n" style="margin-left: 5.5%;"><label id="lastname-label" for="lastName"><strong>Last Name:</strong></label><br><br></div>
+    <input size="50.99%" type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required><br><br></div>
+  
+
+ </div><br>
+ 
+
+ <!-- Email Input -->
+ <div>
+   <div class="n" style="margin-left: 5.8%;"> <label id="email-label" for="email"><strong>Email Address:</strong></label><br><br></div>
+  <input type="email" id="email" name="firstName" placeholder="Enter your Email Address" required><br><br>
+
+ </div>
+ 
 
 
-                    </div><br>
+ <!-- Age Input -->
 
+ <div>
+ <div class="n" style="margin-left: 5.8%;">
+  <label id="number-label" for="number"><strong>Age:</strong> </label> <br><br>
+
+</div>
+ <input id="number" name="number" type="number" placeholder="Enter your Age" min="1" max="125" required><br><br>
+
+ </div>
+ 
+
+ </fieldset>
+ <br>
+
+<fieldset id="info">
+
+  
+    <h3><strong> Survey Questions:
+    </strong> </h3>
+
+
+  <!-- Dropdown -->
+<!-- Q1 -->
+  <br>
+  <div> 
+    <label for="option">Are you currently a Student or Working?:</label><br>
+    <select name="option" id="Dropdown" form="option">
+      <option selected disabled value>Select an option</option>
+      <option value="Student">Student</option>
+      <option value="Working">Working</option>
+      
+    </select>
+    </div><br>
+<!-- Q2 -->
+<div> 
+  <label for="option">What type of worker are you? If you are still a student choose NA:</label><br>
+  <select name="option" id="Dropdown" form="option">
+    <option selected disabled value>Select an option</option>
+    <option value="Self - Employed">Self - Employed</option>
+    <option value="Employee">Employee</option>
+    <option value="Student">Not Applicable</option>
+    
+  </select>
+  </div><br>
 
 
 
   <!-- User #13-->
+
+  <!-- Q1-->
   <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Radios</label>
+  <label class="col-md-4 control-label" for="radios">Overall, what is your reaction to the described product?</label>
   <div class="col-md-4">
   <div class="radio">
     <label for="radios-0">
       <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      A
+      Excellent
     </label>
 	</div>
   <div class="radio">
     <label for="radios-1">
       <input type="radio" name="radios" id="radios-1" value="2">
-      B
+      Very Good
     </label>
 	</div>
   <div class="radio">
     <label for="radios-2">
       <input type="radio" name="radios" id="radios-2" value="3">
-      C
+      Good
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Fair
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      Poor
     </label>
 	</div>
   </div>
 </div><BR>
 
+    <!-- Q2-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="radios">How interested would you be in using the described product?</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="radios-0">
+        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+        Extremely interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Somewhat interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Neutral
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Not very interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Not at all interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Not sure
+      </label>
+    </div>
+    </div>
+  </div><BR>
+
+    
+     <!-- Q3-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="radios"> Which of the following best describes your need for this product?</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="radios-0">
+        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+        I do need it because nothing else can solve this problem
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        This is just a minor improvement over what I currently use
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        This is about the same as what I currently use
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        My current product would serve me better
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        I don't see any reason why I should buy this product
+      </label>
+    </div>
+    </div>
+  </div><BR>
+
+    
+     <!-- Q4-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="radios">How often could you find a use for this product?</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="radios-0">
+        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+        Once a week or more often
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        2-3 times a month
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Once a month
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Every 2-3 months
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        2-3 times a year
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Once a year
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Would not use
+      </label>
+    </div>
+    </div>
+  </div><BR>
+
+    
+      <!-- Q5-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="radios">Overall, how interested are you in buying this product?</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="radios-0">
+        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+        Extremely interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Somewhat interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Neither interested nor uninterested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Not very interested
+      </label>
+    </div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Not at all interested
+      </label>
+    </div>
+    </div>
+  </div><BR>
+  
+
+
+
+
+
+
+
 <!-- CHECKBOXES -->
 <div >
-  <label  for="checkboxes">Description:</label>
-  <div class="col-md-4">
-  <div class="checkbox">
-    <label for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-      A
-    </label>
-	</div>
-  <div class="checkbox">
+     <label  for="checkboxes">Description:</label>
+     <div>
+     <div class="checkbox">
+     <label for="checkboxes-0">
+     <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">A</label><br>
+
+	  </div>
+    <div class="checkbox">
     <label for="checkboxes-1">
-      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
-      B
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">B</label>
+
 	</div>
   <div class="checkbox">
     <label for="checkboxes-2">
-      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
-      C
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">C</label>
 	</div>
+
   <div class="checkbox">
     <label for="checkboxes-3">
-      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="">
-     D
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="">D</label>
 	</div>
+
   <div class="checkbox">
     <label for="checkboxes-4">
-      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">
-    E
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">E</label>
 	</div>
   <div class="checkbox">
     <label for="checkboxes-5">
-      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">
-    F
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">F</label>
 	</div>
+
   <div class="checkbox">
     <label for="checkboxes-6">
-      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="">
-      G
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="">G</label>
 	</div>
+
   <div class="checkbox">
     <label for="checkboxes-7">
-      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">
-      H
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">H</label>
 	</div>
+
   <div class="checkbox">
     <label for="checkboxes-8">
-      <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">
-      I
-    </label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">I</label>
 	</div>
   
   </div>
@@ -146,7 +368,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="comments">Any Comments or Suggestions?</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+    <textarea class="form-control" id="comments" name="comments" placeholder="You can leave your feedback here..."></textarea>
   </div>
 </div><BR>
 
@@ -155,12 +377,21 @@
   
    
 
-                   <!-- Submit button -->
+<!-- Submit button -->
 
-                   <div> 
-                    <button id="submit- button" name="submit- button" class="btn btn-primary">SUBMIT</button> 
-                    </div><BR>
-                </fieldset>
+<div> 
+<button id="submit- button" name="submit- button" class="btn btn-primary">SUBMIT</button> 
+</div><BR>
+
+ 
+
+
+</fieldset>
+                   
+                    
+
+
+                
 
             
 
@@ -169,8 +400,31 @@
           </form>
 
 
+       <style>
+         body {
+           
+          background-image: url('Images/BGI1\ -\ Survey\ Form.jpg');
+          background-position: center;
+          background-blend-mode: hard-light;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100%100%;
 
+         }
+
+         #info{
+           
+          background-color: rgba(255, 255, 255, 0.596);
+        
+         }
+
+         
+
+         
+       </style>  
    
-    
+    </div>
 
 </body>
+
+
