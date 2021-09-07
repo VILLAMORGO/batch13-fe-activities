@@ -21,39 +21,149 @@
             
                 <fieldset >
                     <!-- Name Input -->
-                    <label id="name"for="firstName"><strong>First Name:</strong></label><br>
-                    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name"><br><br>
-                    <label for="lastName"><strong>Last Name:</strong></label><br>
-                    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name"><br><br>
+                    <label id="firstname-label"for="firstName"><strong>First Name:</strong></label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name" required><br><br>
+
+                    <label id="lastname-label" for="lastName"><strong>Last Name:</strong></label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required><br><br>
 
                     <!-- Email Input -->
                     
-                    <label id="email" for="email"><strong>Email Address:</strong></label><br>
-                    <input type="email" id="email" name="firstName" placeholder="Enter your Email Address"><br><br>
+                    <label id="email-label" for="email"><strong>Email Address:</strong></label><br>
+                    <input type="email" id="email" name="firstName" placeholder="Enter your Email Address" required><br><br>
 
 
-                    <!-- Email Input -->
+                    <!-- Age Input -->
 
-                    <label id="number" for="number"><strong>Enter your Age</strong> </label> <br>
+                    <label id="number-label" for="number"><strong>Enter your Age</strong> </label> <br>
                     
                     <input id="number" name="number" type="number" placeholder="Age" min="1" max="125" required><br><br>
+                    <!-- Dropdown -->
+                    <div> 
+                      <label for="cars">Choose Something:</label><br>
+<select name="cars" id="Dropdown" form="carform">
+  <option selected disabled value>Select an option</option>
+  <option value="volvo">Option 1</option>
+  <option value="saab">Option 2</option>
+  <option value="opel">Option 3</option>
+  <option value="audi">Option 4</option>
+</select>
+
+
+                    </div><br>
+
+
+
+
+  <!-- User #13-->
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Radios</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      A
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      B
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      C
+    </label>
+	</div>
+  </div>
+</div><BR>
+
+<!-- CHECKBOXES -->
+<div >
+  <label  for="checkboxes">Description:</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      A
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      B
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-2">
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
+      C
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-3">
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="">
+     D
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-4">
+      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">
+    E
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-5">
+      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">
+    F
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-6">
+      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="">
+      G
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-7">
+      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">
+      H
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-8">
+      <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">
+      I
+    </label>
+	</div>
+  
+  </div>
+</div> <BR>
+
+  <!-- Comment -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="comments">Any Comments or Suggestions?</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+  </div>
+</div><BR>
+
+
+
+  
+   
 
                    <!-- Submit button -->
-<div class="form-group">
-    <div class="col-md-4 col-md-offset-4 text-center"> 
-  <button id="submit- button" name="submit- button" class="btn btn-primary">SUBMIT</button> 
-  </div>
-    </div>
-  </div>
 
+                   <div> 
+                    <button id="submit- button" name="submit- button" class="btn btn-primary">SUBMIT</button> 
+                    </div><BR>
                 </fieldset>
 
             
 
-                <fieldset >
-                   
-                    
-                </fieldset>
 
 
           </form>
