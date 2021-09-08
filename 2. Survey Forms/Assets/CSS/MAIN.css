@@ -45,6 +45,24 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
 
 }
 
+#lowerInfo{
+    text-align: left;
+    width: 800px;
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.596);
+    
+   
+border-radius: 15px;
+-webkit-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+-moz-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+
+
+}
+
 body{
     margin: 10px;
 	
@@ -57,7 +75,6 @@ body{
 }
 
 input {
-    width: 88%;
     border-radius: 7px;
 	-webkit-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
 -moz-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
@@ -71,8 +88,54 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
     justify-content: center; 
   }
 
+  #ageinput{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    justify-content:space-evenly 
+  }
+
  .n {
      text-align: left;
  }
 
+ .upperInput {
+width: 88%;
+
+ }
+
+ h3{
+     text-align: center;
+ }
+
+ #lowerdiv {
+margin-left: 10%;
+
+ }
+
+ #button{
+     text-align: center;
+ }
+
+ #submit-button{ 
+    border-radius: 7px;
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+-moz-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+ }
+
+ #comments {
+     width: 50%;
+     max-height: 20%;
+    border-radius: 12px;
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+-moz-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+
+ }
+
+ h4{
+     font-weight: bold;
+ }
   

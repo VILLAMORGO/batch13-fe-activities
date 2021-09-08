@@ -32,10 +32,10 @@
    <div><div class="n" style="margin-left: 5.5%;"><label id="firstname-label" for="firstName" ><strong style="text-align: left;">First Name:</strong></label><br><br></div>
      
 
-    <input size="50.99%" type="text" id="firstName" name="firstName" placeholder="Enter your First Name" required><br><br></div>
+    <input class="upperInput" size="50.99%" type="text" id="firstName" name="firstName" placeholder="Enter your first name here!" required><br><br></div>
   
-  <div><div class="n" style="margin-left: 5.5%;"><label id="lastname-label" for="lastName"><strong>Last Name:</strong></label><br><br></div>
-    <input size="50.99%" type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required><br><br></div>
+  <div><div class="n" style="margin-left: 1%;"><label id="lastname-label" for="lastName"><strong>Last Name:</strong></label><br><br></div>
+    <input size="50.99%" type="text" id="lastName" name="lastName" placeholder="Enter your last name here!" required><br><br></div>
   
 
  </div><br>
@@ -43,31 +43,42 @@
 
  <!-- Email Input -->
  <div>
-   <div class="n" style="margin-left: 5.8%;"> <label id="email-label" for="email"><strong>Email Address:</strong></label><br><br></div>
-  <input type="email" id="email" name="firstName" placeholder="Enter your Email Address" required><br><br>
+   <div>
+   <div class="n" style="margin-left: 6.5%;"> <label id="email-label" for="email"><strong>Email Address:</strong></label><br><br></div>
 
- </div>
+  <div ><input size="100%" type="email" id="email" name="firstName" placeholder="Enter your email address here!" required><br><br></div>
+
+ </div></div>
  
 
 
- <!-- Age Input -->
+ <!-- Age and Country Input -->
 
- <div>
- <div class="n" style="margin-left: 5.8%;">
-  <label id="number-label" for="number"><strong>Age:</strong> </label> <br><br>
+ <div id="ageinput" > 
 
-</div>
- <input id="number" name="number" type="number" placeholder="Enter your Age" min="1" max="125" required><br><br>
+  <div>  <div class="n" style="margin-left: 5.5%;"><label id="number-label" for="number"><strong>Age:</strong> </label><br><br></div>
+    
 
- </div>
+   <input class="upperInput" size="50.99%" type="number" id="firstName" name="firstName" placeholder="Enter your age here!" required><br><br>  </div>
+ 
+ <div><div class="n" style="margin-left: 1%;"><label id="lastname-label" for="Country"><strong>Country:</strong></label><br><br></div>
+   <input size="50.99%" type="text" id="countryname" name="countryname" placeholder="Enter your country name here!" required><br><br></div>
+ 
+
+</div><br>
+
+ 
  
 
  </fieldset>
  <br>
 
-<fieldset id="info">
+
+<fieldset id="lowerInfo">
 
   
+
+  <br>
     <h3><strong> Survey Questions:
     </strong> </h3>
 
@@ -75,8 +86,8 @@
   <!-- Dropdown -->
 <!-- Q1 -->
   <br>
-  <div> 
-    <label for="option">Are you currently a Student or Working?:</label><br>
+  <div id="lowerdiv"> 
+    <label for="option"><h4>Are you currently a Student or Working?</h4> </label>
     <select name="option" id="Dropdown" form="option">
       <option selected disabled value>Select an option</option>
       <option value="Student">Student</option>
@@ -85,8 +96,8 @@
     </select>
     </div><br>
 <!-- Q2 -->
-<div> 
-  <label for="option">What type of worker are you? If you are still a student choose NA:</label><br>
+<div id="lowerdiv"> 
+  <label for="option"><h4>What type of worker are you? If you are still a student choose NA.</h4></label>
   <select name="option" id="Dropdown" form="option">
     <option selected disabled value>Select an option</option>
     <option value="Self - Employed">Self - Employed</option>
@@ -98,39 +109,39 @@
 
 
 
-  <!-- User #13-->
+  <!-- User #13 Radios-->
 
   <!-- Q1-->
-  <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Overall, what is your reaction to the described product?</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div id="lowerdiv">
+  <label  for="radiosQ1"><h4>Overall, what is your reaction to the described product?</h4></label>
+  <div ><br>
+  <div>
+    <label for="radios-Q1.1">
+      <input type="radio" name="Q1" id="radios-Q1.1" value="Excellent" checked="checked">
       Excellent
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
+  <div>
+    <label for="radios-Q1.2">
+      <input type="radio" name="Q1" id="radios-Q1.2" value="Very Good" > 
       Very Good
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-2">
-      <input type="radio" name="radios" id="radios-2" value="3">
+  <div>
+    <label for="radios-Q1.3">
+      <input type="radio" name="Q1" id="radios-Q1.3" value=" Good" >
       Good
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
+  <div>
+    <label for="radios-Q1.4">
+      <input type="radio" name="Q1" id="radios-Q1.4" value="Fair" >
       Fair
     </label>
 	</div>
-  <div class="radio">
-    <label for="radios-2">
-      <input type="radio" name="radios" id="radios-2" value="3">
+  <div>
+    <label for="radios-Q1.5">
+      <input type="radio" name="Q1" id="radios-Q1.5" value="Poor" >
       Poor
     </label>
 	</div>
@@ -138,42 +149,42 @@
 </div><BR>
 
     <!-- Q2-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="radios">How interested would you be in using the described product?</label>
-    <div class="col-md-4">
-    <div class="radio">
-      <label for="radios-0">
-        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div id="lowerdiv">
+    <label  for="radios"><h4>How interested would you be in using the described product?</h4></label>
+    <div > 
+    <div>
+      <label for="radios-Q2.1">
+        <input type="radio" name="Q2" id="radios-Q2.1" value="Extremely interested" checked="checked">
         Extremely interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q2.2">
+        <input type="radio" name="Q2" id="radios-Q2.2" value="Somewhat interested" >
         Somewhat interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q2.3">
+        <input type="radio"  name="Q2" id="radios-Q2.3" value="Neutral">
         Neutral
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q2.4">
+        <input type="radio" name="Q2" id="radios-Q2.4" value="Not very interested">
         Not very interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q2.5">
+        <input type="radio" name="Q2" id="radios-Q2.5" value="Not at all interested">
         Not at all interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q2.6">
+        <input type="radio" name="Q2" id="radios-Q2.6" value="Not sure" >
         Not sure
       </label>
     </div>
@@ -182,36 +193,36 @@
 
     
      <!-- Q3-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="radios"> Which of the following best describes your need for this product?</label>
-    <div class="col-md-4">
-    <div class="radio">
-      <label for="radios-0">
-        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div id="lowerdiv" >
+    <label for="radios"> <h4>Which of the following best describes your need for this product?</h4> </label>
+    <div>
+    <div>
+      <label for="radios-Q3.1">
+        <input type="radio"  name="Q3" id="radios-Q3.1" value="I do need it because nothing else can solve this problem" checked="checked">
         I do need it because nothing else can solve this problem
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q3.2">
+        <input type="radio"  name="Q3" id="radios-Q3.2" value="This is just a minor improvement over what I currently use"  >
         This is just a minor improvement over what I currently use
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q3.3">
+        <input type="radio"  name="Q3" id="radios-Q3.3" value="This is about the same as what I currently use" >
         This is about the same as what I currently use
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q3.4">
+        <input type="radio"  name="Q3" id="radios-Q3.4" value="My current product would serve me better" >
         My current product would serve me better
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q3.5">
+        <input type="radio"  name="Q3" id="radios-Q3.5" value="I don't see any reason why I should buy this product">
         I don't see any reason why I should buy this product
       </label>
     </div>
@@ -220,86 +231,86 @@
 
     
      <!-- Q4-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="radios">How often could you find a use for this product?</label>
-    <div class="col-md-4">
-    <div class="radio">
-      <label for="radios-0">
-        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div  id="lowerdiv">
+    <label for="radios"><h4>often could you find a use for this product?</h4> </label>
+    <div>
+    <div>
+      <label for="radios-Q4.1">
+        <input type="radio"  name="Q4" id="radios-Q4.1" value="Once a week or more often" checked="checked">
         Once a week or more often
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q4.2">
+        <input type="radio" name="Q4" id="radios-Q4.2" value="2-3 times a month">
         2-3 times a month
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q4.3">
+        <input type="radio" name="Q4" id="radios-Q4.3" value="Once a month">
         Once a month
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q4.4">
+        <input type="radio" name="Q4" id="radios-Q4.4" value="Every 2-3 months">
         Every 2-3 months
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q4.5">
+        <input type="radio" name="Q4" id="radios-Q4.5" value="2-3 times a year">
         2-3 times a year
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q4.6">
+        <input type="radio" name="Q4" id="radios-Q4.6" value="Once a year">
         Once a year
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q4.7">
+        <input type="radio" name="Q4" id="radios-Q4.7" value="Would not use">
         Would not use
       </label>
     </div>
     </div>
   </div><BR>
 
-    
+   
       <!-- Q5-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="radios">Overall, how interested are you in buying this product?</label>
-    <div class="col-md-4">
-    <div class="radio">
-      <label for="radios-0">
-        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+  <div id="lowerdiv">
+    <label for="radios"><h4>Overall, how interested are you in buying this product?</h4> </label>
+    <div>
+    <div>
+      <label for="radios-Q5.1">
+        <input type="radio" name="Q5" id="radios-Q5.1" value="Extremely interested" checked="checked">
         Extremely interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q5.2">
+        <input type="radio" name="Q5" id="radios-Q5.2" value="Somewhat interested">
         Somewhat interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q5.3">
+        <input type="radio" name="Q5" id="radios-Q5.3" value="Neither interested nor uninterested">
         Neither interested nor uninterested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-1">
-        <input type="radio" name="radios" id="radios-1" value="2">
+    <div>
+      <label for="radios-Q5.4">
+        <input type="radio"name="Q5" id="radios-Q5.4" value="Not very interested">
         Not very interested
       </label>
     </div>
-    <div class="radio">
-      <label for="radios-2">
-        <input type="radio" name="radios" id="radios-2" value="3">
+    <div>
+      <label for="radios-Q5.5">
+        <input type="radio" name="Q5" id="radios-Q5.5" value="Not at all interested">
         Not at all interested
       </label>
     </div>
@@ -314,61 +325,48 @@
 
 
 <!-- CHECKBOXES -->
-<div >
-     <label  for="checkboxes">Description:</label>
+<div id="lowerdiv" >
+     <label  for="checkboxes"><h4>To whom would you possibly recommend this product?</h4> </label>
      <div>
      <div class="checkbox">
      <label for="checkboxes-0">
-     <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">A</label><br>
+     <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">Classmate</label><br></div>
 
-	  </div>
+     <div class="checkbox">
+      <label for="checkboxes-4">
+        <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">Schoolmates</label><br>
+    </div>
+
+    <div class="checkbox">
+      <label for="checkboxes-5">
+        <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">Batchmates</label><br>
+    </div>
+
+	  
     <div class="checkbox">
     <label for="checkboxes-1">
-      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">B</label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">Colleagues</label><br>
 
 	</div>
   <div class="checkbox">
     <label for="checkboxes-2">
-      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">C</label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">Professor</label><br>
 	</div>
 
   <div class="checkbox">
     <label for="checkboxes-3">
-      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="">D</label>
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="">Workmates</label><br>
 	</div>
 
-  <div class="checkbox">
-    <label for="checkboxes-4">
-      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">E</label>
-	</div>
-  <div class="checkbox">
-    <label for="checkboxes-5">
-      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">F</label>
-	</div>
-
-  <div class="checkbox">
-    <label for="checkboxes-6">
-      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="">G</label>
-	</div>
-
-  <div class="checkbox">
-    <label for="checkboxes-7">
-      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">H</label>
-	</div>
-
-  <div class="checkbox">
-    <label for="checkboxes-8">
-      <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">I</label>
-	</div>
-  
   </div>
 </div> <BR>
 
+
   <!-- Comment -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="comments">Any Comments or Suggestions?</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="comments" name="comments" placeholder="You can leave your feedback here..."></textarea>
+<div id="button">
+  <label  for="comments"><h4>Any Comments or Suggestions?</h4> </label>
+  <div >                     
+    <textarea  id="comments" name="comments" placeholder="You can leave your feedback here..."></textarea>
   </div>
 </div><BR>
 
@@ -379,14 +377,18 @@
 
 <!-- Submit button -->
 
-<div> 
-<button id="submit- button" name="submit- button" class="btn btn-primary">SUBMIT</button> 
+<div id="button"> 
+<button id="submit-button" name="submit- button" class="btn btn-primary" >SUBMIT</button> 
 </div><BR>
 
  
 
 
+
+
+
 </fieldset>
+
                    
                     
 
