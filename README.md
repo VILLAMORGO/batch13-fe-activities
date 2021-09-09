@@ -1,6 +1,9 @@
 # batch13-fe-activities
 
 
+
+
+
 User Stories
 
 1. As a user, I want my tribute page to have an element with a corresponding id="main", which contains all other elements.
