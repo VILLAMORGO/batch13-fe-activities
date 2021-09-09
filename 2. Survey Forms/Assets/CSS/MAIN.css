@@ -238,6 +238,7 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
 
 .flex-container{display: flex;}
 
+<<<<<<< Updated upstream
 /* C O L U M N S*/
 
 #leftsidebar{
@@ -256,6 +257,26 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
         height: auto;
 		text-align: left;
 		position: fixed;
+=======
+#leftsidebar{
+   
+    display: flex;
+
+  
+    
+    flex: 10%;
+}
+
+#main-content{
+    flex: 90%;
+}
+
+  #Leftnav{
+        background-color: #282828;
+		text-align: center;
+		position: fixed;
+    background-attachment: fixed;
+>>>>>>> Stashed changes
 		width: 30%;
 		z-index: 10000;
 		cursor: default;
@@ -266,7 +287,10 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
         margin-bottom: 0;
         list-style: none;
         padding-left: 0;
+<<<<<<< Updated upstream
         resize: both;
+=======
+>>>>>>> Stashed changes
     }
 
     #Leftnav li {
@@ -275,26 +299,67 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
     }
 
     #Leftnav a {
+<<<<<<< Updated upstream
       resize: vertical;
         position: relative;
         display: block;
+=======
+        -moz-transition: background-color .2s ease-in-out;
+        -webkit-transition: background-color .2s ease-in-out;
+        -ms-transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease-in-out;
+        position: relative;
+        display: block;
+        color: #fff;
+>>>>>>> Stashed changes
         text-decoration: none;
         outline: 0;
         font-weight: 600;
         border-radius: 8px;
+<<<<<<< Updated upstream
+=======
+        color: #fff;
+>>>>>>> Stashed changes
         height: 2.5em;
         line-height: 2.5em;
         padding: 0 1.25em;
     }
 
+<<<<<<< Updated upstream
+=======
+    #Leftnav {
+            color: #fff !important;
+            background: #383838;
+        }
+
+        #Leftnav a.active {
+            background: #484848;
+        }
+
+        #Leftnav a.active:before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -0.6em;
+                left: 50%;
+                margin-left: -0.75em;
+                border-left: solid 0.75em transparent;
+                border-right: solid 0.75em transparent;
+                border-top: solid 0.6em #282828;
+            }
+>>>>>>> Stashed changes
 
     .container {
         margin: 0 auto;
         max-width: calc(100% - 50px);
+<<<<<<< Updated upstream
         width: 800px;
         resize: horizontal;
         min-height: 20%;
         max-height: 100%;
+=======
+        width: 1200px;
+>>>>>>> Stashed changes
     }
     
         .container.medium {
@@ -352,6 +417,7 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
 
   
   
+<<<<<<< Updated upstream
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -394,6 +460,9 @@ box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
     padding: 20px;
     text-align: justify;
     }
+=======
+  
+>>>>>>> Stashed changes
   
   
   
