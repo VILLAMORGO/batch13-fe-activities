@@ -1,0 +1,52 @@
+*{
+margin:0;
+
+}
+
+#header{
+    text-align: center;
+}
+#chessboard {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height:800px;
+    max-height: 100%;
+    width: 800px;
+    max-width: 100%;
+    border: 3px solid black;
+    padding: 100px;
+    justify-content: initial;
+}
+/* Woode Style Lighter*/
+#Lwhite{
+    border-radius: 3px;
+    height: 100px;
+    width: 100px;
+    border: 3px  #FFFFE7;
+    background-color:  #FFFFF1;
+}
+
+/* Woode Style Darker*/
+#Lblack{
+    border-radius: 3px;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #6C511E;
+    background-color: #4E3300;
+    
+
+}
+
+#L{ display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+#L2{ display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
