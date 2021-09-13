@@ -325,6 +325,7 @@ html {
       /* Images for works and achievements */
 
       #image{ align-self: center;
+        max-width: 100%;
 
       }
 

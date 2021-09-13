@@ -13,9 +13,14 @@ body{
 }
 
 #chessboard {
+
+    flex: 1 0 calc(25% - 10px);
+    margin: 5px;
+
     border-radius: 11px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     
@@ -74,6 +79,7 @@ body{
     border: 1px solid #FFFFF1;
     background-color:  #FFFFF1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 100%;
@@ -98,6 +104,7 @@ body{
     border: 1px solid #6C511E;
     background: repeating-radial-gradient( #4E3300 .3%, #7C3604 .5%,  #8B4513 1%);
     display: flex;
+    flex-direction: column;
    justify-content: center;
    align-items: center;
    font-size: 100%;
@@ -114,7 +121,6 @@ body{
 
 #L{ display: flex;
     flex-direction: row;
-   
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
@@ -133,3 +139,7 @@ body{
     resize: both;
   
 }
+
+/**/
+
+
