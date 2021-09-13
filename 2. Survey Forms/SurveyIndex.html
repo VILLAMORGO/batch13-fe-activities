@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/MAIN.CSS" />
+</head>
+
+<header id="header">
+  <br>
+    <h1 id=”title”>ONLINE SURVEY FORM ✍️</h1><br>
+    <HR>
+      
+<p style="color: white;">A Study for E-Learning Platform</p><br>
+      
+    
+</header><br>
+<body>
+  
+<a href="Index.html"></a>
+<main class="flex-container">
+
+  <aside id="leftsidebar" >
+
+    <!-- Left Column-->
+ 
+     
+    <div class="aside-left">
+     <nav id="Leftnav">
+       <ul class="container">
+        <li><button id="navfont" class="container"><a href="#header" >About</a> </button></li>
+         <li><button id="navfont" class="container"><a href="#personal" >Data</a> </button></li>
+         <li><button id="navfont" class="container"><a href="#survey" >Questions</a></button></li>
+         <li><button id="navfont" class="container"><a href="#feed" >Feedback</a></button> </li>
+       </ul>
+     </nav>
+ 
+   </div>
+   <div class="column"></div>
+   <div class="column"></div>
+ 
+ </aside>
+
+
+
+<section id="main-content">
+
+  <div class="headerContainer">  <p id=”description”>
+    &#160;&#160;&#160;&#160;&#160;&#160;Hello, Good day! We are a group of web developers conducting a survey who aims to ease the growing problem in learning mathematics. This survey seeks to aid the developer in their research into establishing a web-based learning platform for students and working innovators, particularly for individuals who work in fields where mathematics is essential.
+     </p><br>
+ 
+
+  <p>
+    
+    &#160;&#160;&#160;&#160;&#160;&#160;<strong>About the product: </strong> The 4th Industrial Revolution started when the commercial computer became more available to the public. Programming played a crucial role in technological advancement. Now our team aims to continue to help future innovators and problem solvers by launching an E-learning platform. This platform will assist students in learning and completing math-related assignments and projects in their engineering subjects. This tool will help researchers and innovators with their prototype design computations. Engineers will also benefit from this product in terms of project budgeting and estimation. Our team is committed to supporting the continuous progress of the 4th Industrial Revolution with the help of programming</p> <br>
+
+  <p>  &#160;&#160;&#160;&#160;&#160;&#160;I appreciate your willingness to take the time to complete this survey.  Thank you!</p>
+</div><br><br>
+
+  <div id="form">
+    <form id="survey-form" method="GET">
+      <br><br>
+        
+<fieldset id="info">
+  <br>
+<h3><strong id="personal"> Personal Information:
+</strong> </h3><br>
+
+
+<!-- Name Input -->
+<div class="row" id="nameinput">
+  <div class="col-25">
+    <div  class="n"><label id="firstname-label" for="firstName" ><strong style="text-align: left;">First Name:</strong></label><br><br></div>
+ 
+<div  ><input  class="upperInput" type="text" id="firstName" name="firstName" placeholder="Enter your first name here!" required><br><br></div>
+  </div>
+  <div class="col-75"><div  class="n" "><label id="lastname-label" for="lastName"><strong>Last Name:</strong></label><br><br></div>
+  <div ><input  type="text" id="lastName" name="lastName" placeholder="Enter your last name here!" required><br><br></div>
+  </div>
+</div><br>
+
+
+<!-- Email Input -->
+
+<div>
+<div class="n"  style="margin-left: 5%;"> <label id="email-label" for="email"><strong>Email Address:</strong></label><br><br></div>
+
+<div ><input  type="email" id="email" name="firstName" placeholder="Enter your email address here!"  required><br><br></div>
+
+</div>
+
+<!--  Age and Country Input -->
+<div class="row" id="nameinput">
+  <div class="col-25">
+
+    <div class="n" style="margin-left: 1%;"><label id="number-label" for="number"><strong>Age:</strong> </label><br><br></div>
+
+
+<input class="upperInput"  type="number" id="firstName" name="firstName" placeholder="Enter your age here!" required>
+  </div>
+
+
+  <div class="col-75"><div class="n" style="margin-left: 1%;"><label id="lastname-label" for="Country"><strong>Country:</strong></label><br><br></div>
+  <input  type="text" id="countryname" name="countryname" placeholder="Enter your country name here!" required>
+  </div>
+
+</div><br>
+<br><br>
+
+
+
+
+
+</fieldset>
+<br>
+<br>
+
+<fieldset id="lowerInfo">
+
+
+
+<br><br>
+<h3><strong id="survey"> Survey Questions:
+</strong> </h3>
+
+
+<!-- Dropdown -->
+<!-- Q1 -->
+<br>
+<div id="lowerdiv"> 
+<label for="option"><h4>Are you currently a Student or Working?</h4> </label><br>
+<select name="option" id="Dropdown" form="option">
+  <option selected disabled value>Select an option</option>
+  <option value="Student">Student</option>
+  <option value="Working">Working</option>
+  
+</select>
+</div><br>
+<!-- Q2 -->
+<div id="lowerdiv"> 
+<label for="option"><h4>What type of worker are you? If you are still a student choose NA.</h4></label><br>
+<select name="option" id="Dropdown" form="option">
+<option selected disabled value>Select an option</option>
+<option value="Self - Employed">Self - Employed</option>
+<option value="Employee">Employee</option>
+<option value="Student">Not Applicable</option>
+
+</select>
+</div><br>
+
+
+
+<!-- User #13 Radios-->
+
+<!-- Q1-->
+<div id="lowerdiv">
+<label  for="radiosQ1"><h4>1. Overall, what is your reaction to the described product?</h4></label>
+<div ><br>
+<div>
+<label for="radios-Q1.1">
+  <input type="radio" name="Q1" id="radios-Q1.1" value="Excellent" checked="checked">
+  &#160;&#160;&#160;Excellent
+</label>
+</div>
+<div>
+<label for="radios-Q1.2">
+  <input type="radio" name="Q1" id="radios-Q1.2" value="Very Good" > 
+  &#160;&#160;&#160;Very Good
+</label>
+</div>
+<div>
+<label for="radios-Q1.3">
+  <input type="radio" name="Q1" id="radios-Q1.3" value=" Good" >
+  &#160;&#160;&#160;Good
+</label>
+</div>
+<div>
+<label for="radios-Q1.4">
+  <input type="radio" name="Q1" id="radios-Q1.4" value="Fair" >
+  &#160;&#160;&#160;Fair
+</label>
+</div>
+<div>
+<label for="radios-Q1.5">
+  <input type="radio" name="Q1" id="radios-Q1.5" value="Poor" >
+  &#160;&#160;&#160;Poor
+</label>
+</div>
+</div>
+</div><BR>
+
+<!-- Q2-->
+<div id="lowerdiv">
+<label  for="radios"><h4>2. How interested would you be in using the described product?</h4></label>
+<div > 
+<div>
+  <label for="radios-Q2.1">
+    <input type="radio" name="Q2" id="radios-Q2.1" value="Extremely interested" checked="checked">
+    &#160;&#160;&#160;Extremely interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q2.2">
+    <input type="radio" name="Q2" id="radios-Q2.2" value="Somewhat interested" >
+    &#160;&#160;&#160;Somewhat interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q2.3">
+    <input type="radio"  name="Q2" id="radios-Q2.3" value="Neutral">
+    &#160;&#160;&#160;Neutral
+  </label>
+</div>
+<div>
+  <label for="radios-Q2.4">
+    <input type="radio" name="Q2" id="radios-Q2.4" value="Not very interested">
+    &#160;&#160;&#160;Not very interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q2.5">
+    <input type="radio" name="Q2" id="radios-Q2.5" value="Not at all interested">
+    &#160;&#160;&#160;Not at all interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q2.6">
+    <input type="radio" name="Q2" id="radios-Q2.6" value="Not sure" >
+    &#160;&#160;&#160;Not sure
+  </label>
+</div>
+</div>
+</div><BR>
+
+
+ <!-- Q3-->
+<div id="lowerdiv" >
+<label for="radios"> <h4>3. Which of the following best describes your need for this product?</h4> </label>
+<div>
+<div>
+  <label for="radios-Q3.1">
+    <input type="radio"  name="Q3" id="radios-Q3.1" value="I do need it because nothing else can solve this problem" checked="checked">
+    &#160;&#160;&#160;I do need it because nothing else can solve this problem
+  </label>
+</div>
+<div>
+  <label for="radios-Q3.2">
+    <input type="radio"  name="Q3" id="radios-Q3.2" value="This is just a minor improvement over what I currently use"  >
+    &#160;&#160;&#160;This is just a minor improvement over what I currently use
+  </label>
+</div>
+<div>
+  <label for="radios-Q3.3">
+    <input type="radio"  name="Q3" id="radios-Q3.3" value="This is about the same as what I currently use" >
+    &#160;&#160;&#160;This is about the same as what I currently use
+  </label>
+</div>
+<div>
+  <label for="radios-Q3.4">
+    <input type="radio"  name="Q3" id="radios-Q3.4" value="My current product would serve me better" >
+    &#160;&#160;&#160;My current product would serve me better
+  </label>
+</div>
+<div>
+  <label for="radios-Q3.5">
+    <input type="radio"  name="Q3" id="radios-Q3.5" value="I don't see any reason why I should buy this product">
+    &#160;&#160;&#160;I don't see any reason why I should buy this product
+  </label>
+</div>
+</div>
+</div><BR>
+
+
+ <!-- Q4-->
+<div  id="lowerdiv">
+<label for="radios"><h4>4. How often could you find a use for this product?</h4> </label>
+<div>
+<div>
+  <label for="radios-Q4.1">
+    <input type="radio"  name="Q4" id="radios-Q4.1" value="Once a week or more often" checked="checked">
+    &#160;&#160;&#160;Once a week or more often
+  </label>
+</div>
+<div>
+  <label for="radios-Q4.2">
+    <input type="radio" name="Q4" id="radios-Q4.2" value="2-3 times a month">
+    &#160;&#160;&#160;2-3 times a month
+  </label>
+</div>
+<div>
+  <label for="radios-Q4.3">
+    <input type="radio" name="Q4" id="radios-Q4.3" value="Once a month">
+    &#160;&#160;&#160;Once a month
+  </label>
+</div>
+<div>
+  <label for="radios-Q4.4">
+    <input type="radio" name="Q4" id="radios-Q4.4" value="Every 2-3 months">
+    &#160;&#160;&#160;Every 2-3 months
+  </label>
+</div>
+<div>
+  <label for="radios-Q4.5">
+    <input type="radio" name="Q4" id="radios-Q4.5" value="2-3 times a year">
+    &#160;&#160;&#160;2-3 times a year
+  </label>
+</div>
+<div>
+  <label for="radios-Q4.6">
+    <input type="radio" name="Q4" id="radios-Q4.6" value="Once a year">
+    &#160;&#160;&#160; Once a year
+  </label>
+</div>
+<div>
+  <label for="radios-Q4.7">
+    <input type="radio" name="Q4" id="radios-Q4.7" value="Would not use">
+    &#160;&#160;&#160; Would not use
+  </label>
+</div>
+</div>
+</div><BR>
+
+
+  <!-- Q5-->
+<div id="lowerdiv">
+<label for="radios"><h4>5. Overall, how interested are you in buying this product?</h4> </label>
+<div>
+<div>
+  <label for="radios-Q5.1">
+    <input type="radio" name="Q5" id="radios-Q5.1" value="Extremely interested" checked="checked">
+    &#160;&#160;&#160;Extremely interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q5.2">
+    <input type="radio" name="Q5" id="radios-Q5.2" value="Somewhat interested">
+    &#160;&#160;&#160;Somewhat interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q5.3">
+    <input type="radio" name="Q5" id="radios-Q5.3" value="Neither interested nor uninterested">
+    &#160;&#160;&#160;Neither interested nor uninterested
+  </label>
+</div>
+<div>
+  <label for="radios-Q5.4">
+    <input type="radio"name="Q5" id="radios-Q5.4" value="Not very interested">
+    &#160;&#160;&#160;Not very interested
+  </label>
+</div>
+<div>
+  <label for="radios-Q5.5">
+    <input type="radio" name="Q5" id="radios-Q5.5" value="Not at all interested">
+    &#160;&#160;&#160;Not at all interested
+  </label>
+</div>
+</div>
+</div><BR>
+
+
+
+
+
+
+
+
+<!-- CHECKBOXES -->
+<div id="lowerdiv" >
+ <label  for="checkboxes"><h4>6. To whom would you possibly recommend this product?</h4> </label>
+ <div>
+ <div class="checkbox">
+ <label for="checkboxes-0">
+ <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">&#160;&#160;&#160;Classmate</label><br></div>
+
+ <div class="checkbox">
+  <label for="checkboxes-4">
+    <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">&#160;&#160;&#160;Schoolmates</label><br>
+</div>
+
+<div class="checkbox">
+  <label for="checkboxes-5">
+    <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">&#160;&#160;&#160;Batchmates</label><br>
+</div>
+
+
+<div class="checkbox">
+<label for="checkboxes-1">
+  <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">&#160;&#160;&#160;Colleagues</label><br>
+
+</div>
+<div class="checkbox">
+<label for="checkboxes-2">
+  <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">&#160;&#160;&#160;Professor</label><br>
+</div>
+
+<div class="checkbox">
+<label for="checkboxes-3">
+  <input type="checkbox" name="checkboxes" id="checkboxes-3" value="">&#160;&#160;&#160;Workmates</label><br>
+</div>
+
+</div>
+</div> <BR>
+
+
+</fieldset>
+<BR>
+<br>
+<fieldset id="info">
+  <br>
+<h3><strong> Feedback:
+</strong> </h3><br>
+
+<!-- Comment -->
+<div id="button">
+<label  for="comments"><h4 id="feed">Any Comments or Suggestions?</h4> </label>
+<div >                     
+<textarea  id="comments" name="comments" placeholder="You can leave your feedback here..."></textarea>
+</div>
+</div><BR>
+
+
+<!-- Submit button -->
+
+<div id="button"> 
+<button id="submit-button" name="submit- button" class="btn btn-primary" >SUBMIT</button> 
+</div><BR>
+</fieldset>
+<br>
+
+
+      </form>
+  </div>
+
+</section>
+
+
+
+  </main>
+
+    
+
+
+
+       <style>
+         body {
+           
+          background-image: url('Images/BGI1\ -\ Survey\ Form.jpg');
+          background-position: center;
+          background-blend-mode: hard-light;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100%100%;
+
+         }
+
+         
+
+         
+
+         
+       </style>  
+   
+    
+
+  
+   
+
+</body>
+
+<footer>
+  <div id="footer"><p><br></p></div>
+  
+</footer>
