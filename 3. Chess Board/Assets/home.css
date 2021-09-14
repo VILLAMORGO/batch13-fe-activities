@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+#wholecontainer{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#uppertab{
+display: block;
+background-color: #111224 ;
+height: 3vh;
+width: 100vw;
+text-align: center;
+
+}
+
+h1{color: white;
+    font-size: 2.4vh;
+    }
+    #flex{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 97vh;
+        background: linear-gradient(to top left, #bab0a4 50%, #eaeaea 50%);
+    }
+
+    #leftbox{
+
+        width: 35%;
+        height: 79%;
+        border: 2px solid black;
+        background: repeating-radial-gradient(#eaeceb .1%, #eeeff1 .3%, #e7e8ea .4%);
+        text-align: center;
+    }
+
+    #rightbox{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 79%;
+        background-color: #302d34;
+        border: 2px solid black;
+        text-align: center;
+    }
+    h2{font-family: Arial, Helvetica, sans-serif;
+    
+        color: #0196c7;}
+
+        h3{font-family: Arial, Helvetica, sans-serif;
+        color: white;}
+
+        #image{
+            display: block;
+            max-width: 100%;
+            height:453.33px;
+            width: 680px;
+        }
+       #img{align-self:flex-end ;
+             }
