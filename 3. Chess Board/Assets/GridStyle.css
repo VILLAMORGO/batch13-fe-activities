@@ -1,0 +1,95 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{ border: 1px solid black;
+        text-align: center;}
+
+/* Chess board*/
+
+#chessboardwrapper{
+display: flex;
+    margin: auto;
+    border-radius: 11px;
+   
+
+    border: 3px solid #6D2700;
+    box-shadow: 2px;
+    box-shadow: #9A5422;
+
+   
+
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+    box-shadow: 0px 0px 5px 5px rgba(44,62,80,0.25);
+
+   
+   
+} 
+
+#main{
+   display: grid;
+  grid-template-columns: .2fr repeat(7, 1fr) .2fr;
+  grid-template-rows:.2fr repeat(8, 1fr) .2fr;
+  grid-template-areas:"Inside Inside Inside Inside Inside Inside Inside Inside Inside Inside "
+  ;
+}
+
+/* Border */
+
+
+#insidecontainer{
+  grid-area: Inside;
+  background-color: khaki;
+}
+
+
+
+
+/* Border */
+
+/*----------------------------------------------------------------*/
+
+/* Bricks */
+
+#whitegridbox{grid-area: W;
+  background: repeating-radial-gradient( #7C3604 .5%,  #8B4513 1%);}
+
+#blackgridbox{grid-area: B;
+  background: repeating-radial-gradient( #7C3604 .5%,  #8B4513 1%);}
+
+/* Bricks */
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+.squarecontainer{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 649px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .box{
+    flex: 1 0 calc(25% - 10px);
+    background: #E9D2FF;
+  }
+  
+  .box:after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+
+  
