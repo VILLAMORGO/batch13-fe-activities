@@ -1,0 +1,132 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{ border: 1px solid black;
+        text-align: center;}
+
+/* Chessboard Wrapper*/
+
+#chessboardwrapper{
+    margin: auto;
+    border-radius: 11px;
+   
+
+    
+  
+} 
+
+
+
+/* Board */
+
+#Board{
+
+  
+display: grid;
+height: 649px;
+grid-template-columns: .8fr 8.4fr .8fr;
+grid-template-rows: .8fr 8.4fr .8fr;
+grid-template-areas: "top top top" "left inside right" "bottom bottom bottom";
+
+
+
+}
+
+/* Border */
+
+#upperoutside{ 
+  display: grid;
+  justify-content: center;
+  background: repeating-radial-gradient(#006943 .1%, #00492f .2%, #006b42 .3%);
+  grid-area: top;
+}
+#outsideleft{
+  display: grid;
+  
+  background: repeating-radial-gradient(#006943 .1%, #00492f .2%, #006b42 .3%);
+  grid-area: left;
+}
+#inside{ 
+  background: repeating-radial-gradient(#faeede.1%, #fef9e3.2%, #fef2e1.3%);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-area: inside;
+}
+#outsideright{
+  display: grid;
+  
+  background: repeating-radial-gradient(#006943 .1%, #00492f .2%, #006b42 .3%);
+  grid-area: right;
+}
+#loweroutside{ 
+
+  display: grid;
+  background: repeating-radial-gradient(#006943 .1%, #00492f .2%, #006b42 .3%);
+  grid-area: bottom;
+}
+
+/* Border */
+
+
+
+/* Inside Grid */
+
+
+table { height: 500px;
+  width: 500px;
+  border: 1px solid black;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background: repeating-radial-gradient(#faeede.1%, #fef9e3.2%, #fef2e1.3%);
+}
+td {
+    width: 12.5%; height: 12.5%;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+	background: repeating-radial-gradient(#006943 .1%, #00492f .2%, #006b42 .3%);
+}
+
+
+
+/* Inside Grid */
+
+/* Board */
+
+/*----------------------------------------------------------------*/
+
+
+
+
+/* Responsiveness */
+
+.squarecontainer{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 649px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .box{
+    flex: 1 0 calc(25% - 10px);
+   
+  }
+  
+  .box:after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+
+  #BUTTON{display: block;
+    margin: auto;}
+
+    span{ color: white;}
+  
