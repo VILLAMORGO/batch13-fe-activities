@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+#wholecontainer{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#uppertab{
+display:block;
+background-color: #111224 ;
+height: 6vh;
+width: 100vw;
+text-align: center;
+
+}
+
+h1{color: white;
+    font-size: 2.4vh;
+    }
+    
+    #flex{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 94vh;
+        background: linear-gradient(to top left, #bab0a4 50%, #eaeaea 50%);
+    }
+
+    #leftbox{
+        width: 30%;
+        
+        border-radius: 10px;
+        border: 1px solid black;
+        background: repeating-radial-gradient(#eaeceb .1%, #eeeff1 .3%, #e7e8ea .4%);
+        text-align: center;
+
+        box-shadow: 8px 0px 5px 9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 8px 0px 5px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 0px 5px 9px rgba(0,0,0,0.75);
+    }
+
+    #rightbox{
+        width: 30%;
+       
+        border-radius: 10px;
+        background-color: #302d34;
+        border: 1px solid whitesmoke;
+        text-align: center;
+
+        box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.75);
+        
+    }
+    h2{font-family: Arial, Helvetica, sans-serif;
+    
+        color: #0196c7;
+    font-size: 30px;}
+
+        h3{font-family: Arial, Helvetica, sans-serif;
+        color: white;}
+
+        #image{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            width: 680px;
+        }
+       #img{display: block;
+        max-width: 100%;
+        height: auto;
+           
+             }
+
+        #enter{display: block;
+            margin: auto;
+            height: 30px;
+            width: 90px;
+        }
+
+        @media screen and (max-width: 963px){
+            #leftbox{ box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);}
+
+                #rightbox{box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);}
+
+                    h2{ font-size: 53px;}
+                    #leftbox, #rightbox {  width: 30%;}
+
+                     @media screen and (max-width: 963px){
+            #leftbox{ box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);}
+
+                #rightbox{box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);}
+
+                    h2{ font-size: 53px;}
+                    #leftbox, #rightbox {  width: 30%;}
+
+         
+
+        }
+
+        @media screen and (max-width: 843px){
+            #leftbox{ box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);}
+
+                #rightbox{box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);}
+
+                    h2{ font-size: 48px;}
+                    #leftbox, #rightbox {  width: 30%;}}
+
+                    @media screen and (max-width: 764px){
+                        #leftbox{ box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                            -webkit-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                            -moz-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);}
+            
+                            #rightbox{box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                                -webkit-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                                -moz-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);}
+            
+                                h2{ font-size: 47px;}
+                                #leftbox, #rightbox {  width: 34%;}}
+        
+        @media screen and (max-width: 670px){
+            #leftbox{ box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 8px 0px 5px 3px rgba(0,0,0,0.75);}
+
+                #rightbox{box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.75);}
+
+                    h2{ font-size: 44px;}
+                    #leftbox, #rightbox {  width: 37%;}
+
+         
+
+        }
+
+        @media screen and (max-width: 600px){
+
+            h2{ font-size: 43px;}
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+
+        @media screen and (max-width: 580px){
+
+            h2{ font-size: 39px;}
+            #leftbox, #rightbox {  width: 39%;}
+
+
+
+
+        }
+
+        @media screen and (max-width: 500px){
+
+            h2{ font-size: 36px;}
+
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+
+        @media screen and (max-width: 450px){
+
+            h2{ font-size: 32.1px;}
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+        
+        @media screen and (max-width: 400px){
+
+            h2{ font-size: 29px;}
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+
+        @media screen and (max-width: 350px){
+
+            h2{ font-size: 25px;}
+
+            h3{ font-size: 16px;}
+
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+
+        @media screen and (max-width: 300px){
+
+            h2{ font-size: 22px;}
+
+            h3{ font-size: 14px;}
+
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+        @media screen and (max-width: 250px){
+
+            h2{ font-size: 17.8px;}
+
+            h3{ font-size: 13px;}
+
+            #leftbox, #rightbox {  width: 40%;}
+
+
+        }
+       
+       
+
+       
