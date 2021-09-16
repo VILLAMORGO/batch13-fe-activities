@@ -324,10 +324,14 @@ html {
 
       /* Images for works and achievements */
 
-      #image{ align-self: center;
+      #image{ display: block;
+       margin: auto;
         max-width: 100%;
 
       }
+      #img-div{display: block;
+      margin: auto;
+    max-width: 100%;}
 
       
 
