@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="/a4-project-landing-page/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" src="/a4-project-landing-page/images//milktea logo.jpg" href="#wrapper" alt="">
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#wrapper">Flavors</a></li>
+              <li><a href="#video">Ads</a></li>
+              <li><a href="#form">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+        <section class="carousel">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <div id="textcontent">
+                        <h4>Pearl Milktea Cream Cheese</h4>
+                        <p>Rich, creamy, and frothy cake topped with oreo crumbs and delightfully chewable Black Tapioca Pearls and aromatic Assam Black Tea</p><br>
+                        <a href="">
+                            <div class="btn btnsend ">TREAT YOURSELF!</div>
+                        </a>
+                    </div>
+                    <section id="imagecontent">
+                        <img id="content-img" src="/a4-project-landing-page/images/content1-image.jpg" alt="ashrentea-image">
+                    </section>
+                    <a href="#carousel__slide3" class="carousel__prev"></a>
+                    <a href="#carousel__slide2" class="carousel__next"></a>
+                </div>
+              </li>
+              <li id="carousel__slide2" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <section id="imagecontent">
+                        <img id="content-img" src="/a4-project-landing-page/images/Lemon Mix.jpg" alt="ashrentea-image">
+                    </section>
+                    <div id="textcontent">
+                        <h4>Lemon Mixes</h4>
+                        <p>With the freshness of squeezed lemon and delectable fruit syrup, this is a cute way to stay cool.</p><br>
+                        <a href="">
+                            <div class="btn btnsend ">TREAT YOURSELF TODAY!</div>
+                        </a>
+                    </div>
+                    <a href="#carousel__slide1" class="carousel__prev"></a>
+                    <a href="#carousel__slide3" class="carousel__next"></a>
+                </div>
+              </li>
+              <li id="carousel__slide3" class="carousel__slide"><br>
+                    <div class="carousel__snapper">
+                        <div id="textcontent">
+                            <h4>Soda Pop</h4>
+                            <p>The combination of a refreshing soda and a luscious fruit syrup</p><br>
+                            <a href="">
+                                <div class="btn btnsend ">TREAT YOURSELF TODAY!</div>
+                            </a>
+                        </div>
+                        <section id="imagecontent">
+                            <img id="content-img" src="/a4-project-landing-page/images/Soda Pop.jpg" alt="ashrentea-image">
+                        </section>
+                        <a href="#carousel__slide2" class="carousel__prev"></a>
+                        <a href="#carousel__slide1" class="carousel__next"></a>
+                    </div>
+              </li>
+            </ol>
+        </section>
+    </div>
+
+    <div class="slider-dots">
+        <button class="slider-dot"><a href="#carousel__slide1">●</a></button>
+        <button class="slider-dot"><a href="#carousel__slide2">●</a></button>
+        <button class="slider-dot"><a href="#carousel__slide3">●</a></button>
+    </div>
+
+    <div id="container1">
+        <section id="imagecontent">
+            <img id="content-img" src="/a4-project-landing-page/images/transparent-bubble-tea.png" alt="ashrentea-image">
+        </section>
+        <div id="textcontent1">
+            <h1><strong>#ASHRENTEA FOR YOU AND ME</strong></h1>
+        </div>
+    </div>
+    
+    <iframe  id="video" src="https://www.youtube.com/embed/Zfj1lwxy5S8?playlist=Zfj1lwxy5S8&loop=1" frameborder="0" >
+    </iframe>
+
+    <div id="container2">
+        <div id="content">
+            <div>
+                <h3>SHARE US YOUR THOUGHTS</h3><br>
+                <P style="text-align: left;">Ashrentea Milktea is a Filipino beverage small enterprise based in Caloocan, Philippines, that specializes in refreshing beverages such as milktea, lemon mixes, and soda pop.</P>
+            </div>
+            <img id="content-img1" src="/a4-project-landing-page/images/ashrencup.png" alt="Ashren Tea">
+        </div>
+        <div id="content1" action="">
+            <form id="form" action="">
+                <div class="form-group">
+                    <input type="text" placeholder="YOUR NAME" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="YOUR EMAIL ADDRESS" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="PHONE NUMBER" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" placeholder="MESSAGES" class="form-control" required>
+                    </textarea>
+                </div> 
+                <a>
+                    <button class="btn btnsend " name="submit-button">SUBMIT!</button>
+                </a>
+            </form>
+        </div>   
+    </div>
+
+    <footer>
+        <section id="arrow-flex">
+            <button id="scroll-up"><img src="https://img.icons8.com/ios/50/000000/chevron-up.png"/></button>
+        </section>>
+        <div id="bottom">
+            <img id="footer-img" src="/a4-project-landing-page/images//milktea logo.jpg" href="#nav-bar" alt="">
+            <p id="footer-txt">Copyright 2021 AshrenTea MilkTea</p>
+        </div>
+    </footer>
+
+    <script src="/a4-project-landing-page/main.js">
+    </script>
+</body>
+</html>
