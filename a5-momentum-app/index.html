@@ -11,25 +11,25 @@
 </head>
 <body onload="realtimeClock()">
   <form id="form">
-    <div class="field-name">
+    <div class="field-name" id="field1">
         <i class="fas fa-user"></i>
         <input name="name" type="text" placeholder="Your name" id="inpName" required>
-        <i class="fas fa-arrow-right" onclick="save();"></i>
+        <i class="fas fa-arrow-right" id="right-arrow1"></i>
     </div>
-    <div class="field-agenda inactive">
+    <div class="field-agenda inactive" id="field2">
         <i class="far fa-calendar-alt"></i>
         <input  type="text" placeholder="Your agenda today" id="inpAgenda">
-        <i class="fas fa-arrow-right" id="right-arrow" onclick="save();"></i>
+        <i class="fas fa-arrow-right" id="right-arrow2"></i>
     </div>
     <img class="inactive" src="/a5-momentum-app/images/galaxy.jpg" alt="galaxy" id="bgImg">
-    <div id="rand-qoutes">
+    <div id="rand-quotes">
       <div id="quote"> </div>
       <div id="author"> </div>
     </div>
     <div id="main-content">
       <div id="clock"></div>
       <div id="inner-content">
-        <h6 id="greet"></h6>
+        <span id="greet"></span><span id="name"></span>
         <span id="editor">
           <i class="fas fa-edit"></i>
         </span>
@@ -66,7 +66,6 @@
     </section>
   </form>
 
-    <script src="/a5-momentum-app/script/app.js"></script>
     <script src="/a5-momentum-app/script/main.js"></script>
-</body>
+  </body>
 </html>
