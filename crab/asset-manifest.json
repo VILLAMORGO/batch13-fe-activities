@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/batch13-fe-activities/crab/static/css/main.5739ad41.chunk.css",
+    "main.js": "/batch13-fe-activities/crab/static/js/main.f5ac5d25.chunk.js",
+    "main.js.map": "/batch13-fe-activities/crab/static/js/main.f5ac5d25.chunk.js.map",
+    "runtime-main.js": "/batch13-fe-activities/crab/static/js/runtime-main.ce8d9b23.js",
+    "runtime-main.js.map": "/batch13-fe-activities/crab/static/js/runtime-main.ce8d9b23.js.map",
+    "static/js/2.6c63ff73.chunk.js": "/batch13-fe-activities/crab/static/js/2.6c63ff73.chunk.js",
+    "static/js/2.6c63ff73.chunk.js.map": "/batch13-fe-activities/crab/static/js/2.6c63ff73.chunk.js.map",
+    "static/js/3.7eb311c9.chunk.js": "/batch13-fe-activities/crab/static/js/3.7eb311c9.chunk.js",
+    "static/js/3.7eb311c9.chunk.js.map": "/batch13-fe-activities/crab/static/js/3.7eb311c9.chunk.js.map",
+    "index.html": "/batch13-fe-activities/crab/index.html",
+    "static/css/main.5739ad41.chunk.css.map": "/batch13-fe-activities/crab/static/css/main.5739ad41.chunk.css.map",
+    "static/js/2.6c63ff73.chunk.js.LICENSE.txt": "/batch13-fe-activities/crab/static/js/2.6c63ff73.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/batch13-fe-activities/crab/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce8d9b23.js",
+    "static/js/2.6c63ff73.chunk.js",
+    "static/css/main.5739ad41.chunk.css",
+    "static/js/main.f5ac5d25.chunk.js"
+  ]
+}
